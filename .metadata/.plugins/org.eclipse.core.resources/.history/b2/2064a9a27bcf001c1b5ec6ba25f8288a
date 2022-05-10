@@ -1,0 +1,26 @@
+package work01;
+
+import java.util.Scanner;
+
+public class HomeWork1_10 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("점수 : ");
+		int point = sc.nextInt();
+		
+		if(point>=0 && point <=49)
+			System.out.println("가");
+		else if(point>=50 && point <=59)
+			System.out.println("양");
+		else if(point>=50 && point <=59)
+			System.out.println("양");
+		else if(point>=50 && point <=59)
+			System.out.println(");
+		else if(point>=50 && point <=59)
+			System.out.println("수");
+		else
+			System.out.println("잘못된 점수입니다.");
+	}
+
+}

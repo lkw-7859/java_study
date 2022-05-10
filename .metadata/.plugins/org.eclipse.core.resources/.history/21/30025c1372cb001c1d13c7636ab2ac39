@@ -1,0 +1,24 @@
+package chap04;
+
+import java.util.Scanner;
+
+public class ForSumExample {
+
+	public static void main(String[] args) {
+		int sum=0;
+		
+		System.out.println("몇 부터?");
+		Scanner f = new Scanner(System.in);
+		System.out.println("몇 까지?");
+		Scanner t = new Scanner(System.in);
+		
+		int from = f.nextInt();
+		int to = t.nextInt();
+		for(int i=from;i<=to;i++) {
+			sum+=i;
+		}
+		
+		System.out.print(from+"부터 "+to+"까지의 합은"+ sum + "입니다.");
+	}
+
+}
