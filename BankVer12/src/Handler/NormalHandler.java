@@ -22,22 +22,22 @@ public class NormalHandler
 	public static void ShowMenu()
 	{
 		System.out.println("----------menu----------");
-		System.out.println("1.°èÁÂ°³¼³");
-		System.out.println("2.ÀÔ±İ");
-		System.out.println("3.Ãâ±İ");
-		System.out.println("4.ÀÌÃ¼");
-		System.out.println("5.°èÁÂ Á¤º¸ ÀüÃ¼ Ãâ·Â");
-		System.out.println("6.È¸¿øÁ¤º¸¼öÁ¤");
-		System.out.println("7.Á¾·á");
+		System.out.println("1.ê³„ì¢Œê°œì„¤");
+		System.out.println("2.ì…ê¸ˆ");
+		System.out.println("3.ì¶œê¸ˆ");
+		System.out.println("4.ì´ì²´");
+		System.out.println("5.ê³„ì¢Œ ì •ë³´ ì „ì²´ ì¶œë ¥");
+		System.out.println("6.íšŒì›ì •ë³´ìˆ˜ì •");
+		System.out.println("7.ì¢…ë£Œ");
 	}
 	
 	public static void MakeAccount(int idx) throws InputMismatchException
 	{
 		try
 		{
-			System.out.println("[°èÁÂÁ¾·ù¼±ÅÃ]");
-			System.out.println("1.º¸Åë¿¹±İ°èÁÂ   2.½Å¿ë½Å·Ú°èÁÂ");
-			System.out.print("¼±ÅÃ : ");
+			System.out.println("[ê³„ì¢Œì¢…ë¥˜ì„ íƒ]");
+			System.out.println("1.ë³´í†µì˜ˆê¸ˆê³„ì¢Œ   2.ì‹ ìš©ì‹ ë¢°ê³„ì¢Œ");
+			System.out.print("ì„ íƒ : ");
 			int num = scan.nextInt();
 			
 			if(num == 1)
@@ -51,7 +51,7 @@ public class NormalHandler
 			}
 		}
 		catch(InputMismatchException e) {
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 		}
 	}
 	
@@ -59,19 +59,19 @@ public class NormalHandler
 	{
 		try
 		{
-			System.out.println("[º¸Åë¿¹±İ°èÁÂ °³¼³]");
+			System.out.println("[ë³´í†µì˜ˆê¸ˆê³„ì¢Œ ê°œì„¤]");
 			
 			while(true)
 			{
 				int flag = 0;
-				System.out.print("°èÁÂ ID :");
+				System.out.print("ê³„ì¢Œ ID :");
 				int id = scan.nextInt();
 				
 				for(int i = 0;i<cnt;i++)
 				{
 					if(id == Acc1[i].getAccID())
 					{
-						System.out.println("µ¿ÀÏÇÑ °èÁÂ¹øÈ£°¡ ÀÖ½À´Ï´Ù. ´Ù½ÃÀÔ·ÂÇØÁÖ¼¼¿ä");
+						System.out.println("ë™ì¼í•œ ê³„ì¢Œë²ˆí˜¸ê°€ ìˆìŠµë‹ˆë‹¤. ë‹¤ì‹œì…ë ¥í•´ì£¼ì„¸ìš”");
 						flag++;
 						break;
 					}
@@ -79,23 +79,23 @@ public class NormalHandler
 				
 				if(flag == 0)
 				{
-					System.out.print("°èÁÂ ºñ¹Ğ¹øÈ£ : ");
+					System.out.print("ê³„ì¢Œ ë¹„ë°€ë²ˆí˜¸ : ");
 					int pw = scan.nextInt();
-					System.out.print("ÀÌ¸§ :");
+					System.out.print("ì´ë¦„ :");
 					String name = scan.next();
-					System.out.print("ÀÔ±İ¾× :");
+					System.out.print("ì…ê¸ˆì•¡ :");
 					int bal = scan.nextInt();
-					System.out.print("ÀÌÀÚÀ² :");
+					System.out.print("ì´ììœ¨ :");
 					int rate = scan.nextInt();
 					
 					Acc1[cnt++] = new NormalAccount(id,bal,pw,name,idx,rate);
-					System.out.println("ÀÏ¹İ°èÁÂ°¡ »ı¼ºµÇ¾ú½À´Ï´Ù.");
+					System.out.println("ì¼ë°˜ê³„ì¢Œê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.");
 					return;
 				}	
 			}
 		}
 		catch(InputMismatchException e) {
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 		}
 	}
 	
@@ -103,19 +103,19 @@ public class NormalHandler
 	{
 		try
 		{
-			System.out.println("[½Å¿ë½Å·Ú°èÁÂ °³¼³]");
+			System.out.println("[ì‹ ìš©ì‹ ë¢°ê³„ì¢Œ ê°œì„¤]");
 			
 			while(true)
 			{
 				int flag = 0;
-				System.out.print("°èÁÂ ID :");
+				System.out.print("ê³„ì¢Œ ID :");
 				int id = scan.nextInt();
 				
 				for(int i = 0;i<cnt;i++)
 				{
 					if(id == Acc1[i].getAccID())
 					{
-						System.out.println("µ¿ÀÏÇÑ °èÁÂ¹øÈ£°¡ ÀÖ½À´Ï´Ù. ´Ù½ÃÀÔ·ÂÇØÁÖ¼¼¿ä");
+						System.out.println("ë™ì¼í•œ ê³„ì¢Œë²ˆí˜¸ê°€ ìˆìŠµë‹ˆë‹¤. ë‹¤ì‹œì…ë ¥í•´ì£¼ì„¸ìš”");
 						flag++;
 						break;
 					}
@@ -123,59 +123,59 @@ public class NormalHandler
 				
 				if(flag == 0)
 				{
-					System.out.print("°èÁÂ ºñ¹Ğ¹øÈ£ : ");
+					System.out.print("ê³„ì¢Œ ë¹„ë°€ë²ˆí˜¸ : ");
 					int pw = scan.nextInt();
-					System.out.print("ÀÌ¸§ :");
+					System.out.print("ì´ë¦„ :");
 					String name = scan.next();
-					System.out.print("ÀÔ±İ¾× :");
+					System.out.print("ì…ê¸ˆì•¡ :");
 					int bal = scan.nextInt();
-					System.out.print("ÀÌÀÚÀ² :");
+					System.out.print("ì´ììœ¨ :");
 					int rate = scan.nextInt();
-					System.out.print("½Å¿ëµî±Ş(1toA, 2toB, 3toC) :");
+					System.out.print("ì‹ ìš©ë“±ê¸‰(1toA, 2toB, 3toC) :");
 					int rate2 = scan.nextInt();
 					
 					switch(rate2) {
 					case 1 :
 						Acc1[cnt++] = new HighCreditAccount(id,bal,pw,name,idx,rate,7);
-						System.out.println("½Å¿ë°èÁÂ°¡ »ı¼ºµÇ¾ú½À´Ï´Ù.");
+						System.out.println("ì‹ ìš©ê³„ì¢Œê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.");
 						return;
 					case 2:
 						Acc1[cnt++] = new HighCreditAccount(id,bal,pw,name,idx,rate,4);
-						System.out.println("½Å¿ë°èÁÂ°¡ »ı¼ºµÇ¾ú½À´Ï´Ù.");
+						System.out.println("ì‹ ìš©ê³„ì¢Œê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.");
 						return;
 					case 3:
 						Acc1[cnt++] = new HighCreditAccount(id,bal,pw,name,idx,rate,2);
-						System.out.println("½Å¿ë°èÁÂ°¡ »ı¼ºµÇ¾ú½À´Ï´Ù.");
+						System.out.println("ì‹ ìš©ê³„ì¢Œê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.");
 						return;
 					}
 				}
 			}
 		}
 		catch(InputMismatchException e) {
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 		}
 	}
 	
 	/*public static void MakeAccount()
 	{
-		System.out.println("°èÁÂ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.println("ê³„ì¢Œë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		int acc = scan.nextInt();
 		
-		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.println("ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		scan.nextLine();
 		String name = scan.nextLine();
-		System.out.println("ÀÔ±İ¾×À» ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.println("ì…ê¸ˆì•¡ì„ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		int money = scan.nextInt();
 		
 		Acc1[cnt++] = new Account(acc,money,name);
-		System.out.println("°èÁÂ¸¦ »ı¼ºÇÏ¿´½À´Ï´Ù");
+		System.out.println("ê³„ì¢Œë¥¼ ìƒì„±í•˜ì˜€ìŠµë‹ˆë‹¤");
 	}*/
 	
 	public static void tranfer() throws AccountException,InputMismatchException
 	{
 		try
 		{
-			System.out.print("Ãâ±İÇÒ ÅëÀåÀÇ °èÁÂ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+			System.out.print("ì¶œê¸ˆí•  í†µì¥ì˜ ê³„ì¢Œë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 			int id = scan.nextInt();
 			int flag = 0;
 			int id_flag = 0;
@@ -188,12 +188,12 @@ public class NormalHandler
 					if(Acc1[i].getAccID() == id)
 					{
 						id_flag++;
-						System.out.print("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+						System.out.print("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 						int pw = scan.nextInt();
 						if(Acc1[i].getAccPW() == pw)
 						{
 							pw_flag = 1;
-							System.out.print("ÀÌÃ¼ÇÒ ÅëÀåÀÇ °èÁÂ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+							System.out.print("ì´ì²´í•  í†µì¥ì˜ ê³„ì¢Œë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 							int r_id = scan.nextInt();
 							for(int i2 = 0;i2<cnt;i2++)
 							{
@@ -203,42 +203,42 @@ public class NormalHandler
 									{
 										if(LoginHandler.user[(Acc1[i2].getIndex())].getNum() == 1) {
 										flag++;
-										System.out.print("ÀÌÃ¼±İ¾×À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+										System.out.print("ì´ì²´ê¸ˆì•¡ì„ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 										int money = scan.nextInt();
 										Acc1[i].Withdraw(money);
 										Acc1[i2].setBalance(Acc1[i2].getBalance() + money);
-										System.out.println("ÀÌÃ¼°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+										System.out.println("ì´ì²´ê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 										return;
 										}
 										else
 										{
-											System.out.println("ÈŞ¸é°èÁÂ·Î´Â ÀÌÃ¼°¡ ºÒ°¡ÇÕ´Ï´Ù.");
+											System.out.println("íœ´ë©´ê³„ì¢Œë¡œëŠ” ì´ì²´ê°€ ë¶ˆê°€í•©ë‹ˆë‹¤.");
 											return;
 										}
 									}
 									else
 									{
-										System.out.println("µ¿ÀÏ°èÁÂ·Î´Â ÀÌÃ¼°¡ ºÒ°¡´ÉÇÕ´Ï´Ù");
+										System.out.println("ë™ì¼ê³„ì¢Œë¡œëŠ” ì´ì²´ê°€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤");
 										return;
 									}
 								}
 							}
 							if(flag == 0)
 							{
-								System.out.println("Àß¸øµÈ/¾ø´Â °èÁÂ¹øÈ£ ÀÔ´Ï´Ù");
+								System.out.println("ì˜ëª»ëœ/ì—†ëŠ” ê³„ì¢Œë²ˆí˜¸ ì…ë‹ˆë‹¤");
 								return;
 							}
 						}
 						if(pw_flag == 0)
 						{
-							System.out.println("Àß¸øµÈ ÆĞ½º¿öµå ÀÔ·ÂÀÔ´Ï´Ù.");
+							System.out.println("ì˜ëª»ëœ íŒ¨ìŠ¤ì›Œë“œ ì…ë ¥ì…ë‹ˆë‹¤.");
 							return;
 						}
 					}	
 				}
 				if(id_flag == 0)
 				{
-					System.out.println("Àß¸øµÈ/¾ø´Â °èÁÂ¹øÈ£ ÀÔ´Ï´Ù");
+					System.out.println("ì˜ëª»ëœ/ì—†ëŠ” ê³„ì¢Œë²ˆí˜¸ ì…ë‹ˆë‹¤");
 					return;
 				}
 			}
@@ -251,7 +251,7 @@ public class NormalHandler
 		
 		catch(InputMismatchException e) 
 		{
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 		}
 			
 	}
@@ -262,7 +262,7 @@ public class NormalHandler
 	{
 		try
 		{
-			System.out.print("°èÁÂ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+			System.out.print("ê³„ì¢Œë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 			int id = scan.nextInt();
 			int id_flag = 0;
 			int pw_flag = 0;
@@ -274,20 +274,20 @@ public class NormalHandler
 					if(Acc1[i].getAccID() == id)
 					{
 						id_flag++;
-						System.out.print("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+						System.out.print("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 						int pw = scan.nextInt();
 						if(Acc1[i].getAccPW() == pw)
 						{
 							pw_flag++;
-							System.out.print("ÀÔ±İ¾×À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+							System.out.print("ì…ê¸ˆì•¡ì„ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 							int money = scan.nextInt();
 							Acc1[i].Deposit(money);
-							System.out.println("ÀÔ±İ¿Ï·á");
+							System.out.println("ì…ê¸ˆì™„ë£Œ");
 							return;
 						}
 						else if(pw_flag == 0)
 						{
-							System.out.println("Àß¸øµÈ ÆĞ½º¿öµåÀÔ´Ï´Ù.");
+							System.out.println("ì˜ëª»ëœ íŒ¨ìŠ¤ì›Œë“œì…ë‹ˆë‹¤.");
 							return;
 						}
 					}
@@ -295,7 +295,7 @@ public class NormalHandler
 				}
 				if(id_flag == 0)
 				{
-					System.out.println("Àß¸øµÈ/¾ø´Â °èÁÂ¹øÈ£ ÀÔ´Ï´Ù.");
+					System.out.println("ì˜ëª»ëœ/ì—†ëŠ” ê³„ì¢Œë²ˆí˜¸ ì…ë‹ˆë‹¤.");
 					return;
 				}
 			
@@ -306,7 +306,7 @@ public class NormalHandler
 			}
 		}
 		catch(InputMismatchException e) {
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 		}
 	}
 
@@ -315,7 +315,7 @@ public class NormalHandler
 	{
 		try
 		{
-			System.out.print("°èÁÂ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+			System.out.print("ê³„ì¢Œë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 			int id = scan.nextInt();
 			int id_flag = 0;
 			int pw_flag = 0;
@@ -328,30 +328,30 @@ public class NormalHandler
 					if(Acc1[i].getAccID() == id)
 					{
 						id_flag++;
-						System.out.print("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+						System.out.print("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 						int pw = scan.nextInt();
 						
 						if(Acc1[i].getAccPW() == pw)
 						{
 							pw_flag++;
-							System.out.print("Ãâ±İ¾×À» ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+							System.out.print("ì¶œê¸ˆì•¡ì„ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 							int money = scan.nextInt();
 							
 							Acc1[i].Withdraw(money);
-							System.out.println("Ãâ±İ¿Ï·á");
+							System.out.println("ì¶œê¸ˆì™„ë£Œ");
 							return;
 							
 						}
 						else if(pw_flag == 0)
 						{
-							System.out.println("Àß¸øµÈ ÆĞ½º¿öµåÀÔ·ÂÀÔ´Ï´Ù.");
+							System.out.println("ì˜ëª»ëœ íŒ¨ìŠ¤ì›Œë“œì…ë ¥ì…ë‹ˆë‹¤.");
 							return;
 						}
 					}
 				}
 				if(id_flag == 0)
 				{
-					System.out.println("Àß¸øµÈ/¾ø´Â °èÁÂ¹øÈ£ÀÔ´Ï´Ù.");
+					System.out.println("ì˜ëª»ëœ/ì—†ëŠ” ê³„ì¢Œë²ˆí˜¸ì…ë‹ˆë‹¤.");
 					return;
 				}	
 			}
@@ -361,7 +361,7 @@ public class NormalHandler
 			}
 		}
 		catch(InputMismatchException e) {
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 		}
 		
 		/*
@@ -388,7 +388,7 @@ public class NormalHandler
 		}
 		if(flag == 0)
 		{
-			System.out.println("°èÁÂ°¡ ¾ø½À´Ï´Ù");
+			System.out.println("ê³„ì¢Œê°€ ì—†ìŠµë‹ˆë‹¤");
 		}
 		
 	}

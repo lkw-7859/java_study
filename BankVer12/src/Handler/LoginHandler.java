@@ -20,9 +20,9 @@ public class LoginHandler {
 			
 	public static void ShowMenu()
 	{
-		System.out.println("¼±ÅÃÇØÁÖ¼¼¿ä");
-		System.out.println("1.ÀÏ¹İÀ¯Àú ·Î±×ÀÎ   2.ÀÏ¹İÀ¯Àú È¸¿ø°¡ÀÔ   3.°ü¸®ÀÚ·Î±×ÀÎ  4.°ü¸®ÀÚÀ¯Àúµî·Ï  5.Á¾·á");
-		System.out.print("¼±ÅÃ : ");
+		System.out.println("ì„ íƒí•´ì£¼ì„¸ìš”");
+		System.out.println("1.ì¼ë°˜ìœ ì € ë¡œê·¸ì¸   2.ì¼ë°˜ìœ ì € íšŒì›ê°€ì…   3.ê´€ë¦¬ìë¡œê·¸ì¸  4.ê´€ë¦¬ììœ ì €ë“±ë¡  5.ì¢…ë£Œ");
+		System.out.print("ì„ íƒ : ");
 	}
 	
 	public static void NormalLogin() throws AccountException,InputMismatchException 
@@ -40,13 +40,13 @@ public class LoginHandler {
 					{
 						if(user[index].getNum() == 1)
 						{	
-							System.out.println("·Î±×ÀÎ¿¡ ¼º°øÇÏ¿´½À´Ï´Ù.");
+							System.out.println("ë¡œê·¸ì¸ì— ì„±ê³µí•˜ì˜€ìŠµë‹ˆë‹¤.");
 							try
 							{
 							while(true)
 							{
 								NormalHandler.ShowMenu();
-								System.out.print("¼±ÅÃ : ");
+								System.out.print("ì„ íƒ : ");
 								int choice = NormalHandler.scan.nextInt();
 							
 								switch(choice) {
@@ -71,19 +71,19 @@ public class LoginHandler {
 								case 7:
 									return;
 								default :
-									System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+									System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 									break;
 								}
 							}
 							}
 							catch(InputMismatchException e) {
-								System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+								System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 							}
 						
 						}
 						else
 						{
-							System.out.println("ÈŞ¸é À¯Àú¶ó °èÁÂ¸¦ »ı¼ºÇÒ ¼ö ¾ø½À´Ï´Ù.");
+							System.out.println("íœ´ë©´ ìœ ì €ë¼ ê³„ì¢Œë¥¼ ìƒì„±í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 						}
 					}
 				
@@ -161,18 +161,18 @@ public class LoginHandler {
 	public static void MakeNormalUser()
 	{
 		
-		System.out.println("[È¸¿ø°¡ÀÔ]");
+		System.out.println("[íšŒì›ê°€ì…]");
 		
 		while(true)
 		{
 			int flag = 0;
-			System.out.print("ID¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä :");
+			System.out.print("IDë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” :");
 			String id = scan.next();
 			for(int i = 0;i<Normalcnt;i++)
 			{
 				if(id.equals(user[i].getID()))
 				{
-					System.out.println("µ¿ÀÏÇÑ ID°¡ ÀÖ½À´Ï´Ù.´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+					System.out.println("ë™ì¼í•œ IDê°€ ìˆìŠµë‹ˆë‹¤.ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 					flag = 1;
 					break;
 				}
@@ -181,7 +181,7 @@ public class LoginHandler {
 			{
 				System.out.print("pw :");
 				String pw = scan.next();
-				System.out.print("È°µ¿ ¿©ºÎ(1.YES  2.NO) : ");
+				System.out.print("í™œë™ ì—¬ë¶€(1.YES  2.NO) : ");
 				int num2 = scan.nextInt();
 				
 				user[Normalcnt++] = new NormalUser(id,pw,num2);
@@ -208,13 +208,13 @@ public class LoginHandler {
 					{
 						try
 						{
-						System.out.println("·Î±×ÀÎ¿¡ ¼º°øÇÏ¿´½À´Ï´Ù.");
+						System.out.println("ë¡œê·¸ì¸ì— ì„±ê³µí•˜ì˜€ìŠµë‹ˆë‹¤.");
 						
 						
 						while(true)
 						{
 							AdminHandler.ShowMenu();
-							System.out.print("¼±ÅÃ : ");
+							System.out.print("ì„ íƒ : ");
 							int choice = NormalHandler.scan.nextInt();
 							
 							switch(choice) {
@@ -229,20 +229,20 @@ public class LoginHandler {
 								}
 								else
 								{
-									System.out.println("±ÇÇÑÀÌ ¾ø½À´Ï´Ù");
+									System.out.println("ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤");
 									break;
 								}
 							case 3:
-								System.out.println("°ü¸®ÀÚ ¸Ş´º Á¾·á");
+								System.out.println("ê´€ë¦¬ì ë©”ë‰´ ì¢…ë£Œ");
 								return;
 							default :
-								System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+								System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 								break;
 						}
 					}
 				}
 				catch(InputMismatchException e) {
-					System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+					System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 				}
 			}
 		}
@@ -257,8 +257,8 @@ public class LoginHandler {
 	{
 		String passWord = "1111";
 		String inPassword;
-		System.out.println("[°ü¸®ÀÚµî·Ï(ÃÖ´ë 5¸í±îÁö °¡´ÉÇÕ´Ï´Ù.   ÇöÀç :" + Admincnt +"¸í" + ")]");
-		System.out.print("[password¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä] : ");
+		System.out.println("[ê´€ë¦¬ìë“±ë¡(ìµœëŒ€ 5ëª…ê¹Œì§€ ê°€ëŠ¥í•©ë‹ˆë‹¤.   í˜„ì¬ :" + Admincnt +"ëª…" + ")]");
+		System.out.print("[passwordë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”] : ");
 		inPassword = scan.next();
 
 		if(passWord.equals(inPassword))
@@ -266,33 +266,33 @@ public class LoginHandler {
 			while(true)
 			{
 				int flag = 0;
-				System.out.print("ID¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä :");
+				System.out.print("IDë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” :");
 				String id = scan.next();
 				for(int i = 0;i<Admincnt;i++)
 				{
 					if(id.equals(user2[i].getID()))
 					{
-						System.out.println("µ¿ÀÏÇÑ ID°¡ ÀÖ½À´Ï´Ù.´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+						System.out.println("ë™ì¼í•œ IDê°€ ìˆìŠµë‹ˆë‹¤.ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 						flag = 1;
 						break;
 					}
 				}
 				if(flag == 0)
 				{
-					System.out.print("ºñ¹Ğ¹øÈ£ :");
+					System.out.print("ë¹„ë°€ë²ˆí˜¸ :");
 					String pw = scan.next();
-					System.out.print("1.Á¶È¸¸¸ °¡´É  2.Á¶È¸ ¹× ¼öÁ¤°¡´É : ");
+					System.out.print("1.ì¡°íšŒë§Œ ê°€ëŠ¥  2.ì¡°íšŒ ë° ìˆ˜ì •ê°€ëŠ¥ : ");
 					int num2 = scan.nextInt();
 					
 					user2[Admincnt++] = new Adminuser(id,pw,num2);
-					System.out.println("°ü¸®ÀÚ µî·ÏÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù");
+					System.out.println("ê´€ë¦¬ì ë“±ë¡ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤");
 					return;
 				}
 			}
 		}
 		else
 		{
-			System.out.println("Àß¸øµÈ ÆĞ½º¿öµåÀÔ´Ï´Ù. ÃÊ±âÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù");
+			System.out.println("ì˜ëª»ëœ íŒ¨ìŠ¤ì›Œë“œì…ë‹ˆë‹¤. ì´ˆê¸°í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤");
 			return;
 		}
 	}
@@ -302,13 +302,13 @@ public class LoginHandler {
 		int flag = 0;
 		try 
 		{
-			System.out.println("1.¾ÆÀÌµğ ¼öÁ¤  2.ºñ¹Ğ¹øÈ£ ¼öÁ¤ 3.Menu");
-			System.out.print("¼±ÅÃ : ");
+			System.out.println("1.ì•„ì´ë”” ìˆ˜ì •  2.ë¹„ë°€ë²ˆí˜¸ ìˆ˜ì • 3.Menu");
+			System.out.print("ì„ íƒ : ");
 			int n = scan.nextInt();
 			if(n == 1)
 			{
 				int id_flag = 0;
-				System.out.print("¼öÁ¤ ÇÏ°í ½ÍÀº Id¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä(ÇöÀç ID) : ");
+				System.out.print("ìˆ˜ì • í•˜ê³  ì‹¶ì€ Idë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”(í˜„ì¬ ID) : ");
 				String ID = scan.next();
 				
 				for(int i = 0;i<Normalcnt;i++)
@@ -316,11 +316,11 @@ public class LoginHandler {
 					if(ID.equals(user[i].getID()))
 					{
 						id_flag++;
-						System.out.print("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+						System.out.print("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 						String Password = scan.next();
 						if(Password.equals(user[i].getPW()))
 						{
-							System.out.println("¼öÁ¤ ÇÒ  Id¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä(º¯°æÇÏ°í ½ÍÀº ID): ");
+							System.out.println("ìˆ˜ì • í•   Idë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”(ë³€ê²½í•˜ê³  ì‹¶ì€ ID): ");
 							String ID2 = scan.next();
 							for(int j=0;j<Normalcnt;j++)
 							{
@@ -333,30 +333,30 @@ public class LoginHandler {
 							if(flag == 0)
 							{
 								user[i].setID(ID2);
-								System.out.println("¼öÁ¤¿Ï·á");
+								System.out.println("ìˆ˜ì •ì™„ë£Œ");
 								return;
 							}
 							else
 							{
-								System.out.println("Áßº¹µÈ ¾ÆÀÌµğ°¡ ÀÖ½À´Ï´Ù");
+								System.out.println("ì¤‘ë³µëœ ì•„ì´ë””ê°€ ìˆìŠµë‹ˆë‹¤");
 							}
 						}
 						else
 						{
-							System.out.println("ºñ¹Ğ¹øÈ£°¡ ¸ÂÁö ¾Ê½À´Ï´Ù");
+							System.out.println("ë¹„ë°€ë²ˆí˜¸ê°€ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤");
 							return;
 						}
 					}
 				}
 				if(id_flag == 0)
 				{
-					System.out.println("Àß¸øµÈ/¾ø´Â ¾ÆÀÌµğÀÔ´Ï´Ù.");
+					System.out.println("ì˜ëª»ëœ/ì—†ëŠ” ì•„ì´ë””ì…ë‹ˆë‹¤.");
 					return;
 				}
 			}
 			else if(n == 2)
 			{
-				System.out.print("id¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+				System.out.print("idë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 				String ID = scan.next();
 				int flag1 = 0;
 				
@@ -365,17 +365,17 @@ public class LoginHandler {
 					if(ID.equals(user[i].getID()))
 					{
 						flag1++;
-						System.out.println("¼öÁ¤ ÇÏ°í ½ÍÀº pw¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä: ");
+						System.out.println("ìˆ˜ì • í•˜ê³  ì‹¶ì€ pwë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”: ");
 						String pw = scan.next();
 						
 						user[i].setPW(pw);
-						System.out.println("¼öÁ¤¿Ï·á");
+						System.out.println("ìˆ˜ì •ì™„ë£Œ");
 						return;
 					}
 				}
 				if(flag1 == 0)
 				{
-					System.out.println("Àß¸øµÈ/¾ø´Â ¾ÆÀÌµğÀÔ´Ï´Ù.");
+					System.out.println("ì˜ëª»ëœ/ì—†ëŠ” ì•„ì´ë””ì…ë‹ˆë‹¤.");
 					return;
 				}
 			}
@@ -385,7 +385,7 @@ public class LoginHandler {
 			}
 		}
 		catch(InputMismatchException e) {
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 		}
 	}
 }

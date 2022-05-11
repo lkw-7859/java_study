@@ -12,7 +12,7 @@ public class WithdrawException extends AccountException
 
 	public void ShowExceptionReason() {
 		// TODO Auto-generated method stub
-		System.out.println("[¿¹¿Ü ¸Ş½ÃÁö : " + money + "¿øÀº Ãâ±İºÒ°¡]");
+		System.out.println("[ì˜ˆì™¸ ë©”ì‹œì§€ : " + money + "ì›ì€ ì¶œê¸ˆë¶ˆê°€]");
 		
 	}
 

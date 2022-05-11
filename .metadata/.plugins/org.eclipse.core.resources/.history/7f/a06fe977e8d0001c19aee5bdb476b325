@@ -1,0 +1,10 @@
+package work03;
+
+public class SignRepeat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

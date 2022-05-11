@@ -6,7 +6,7 @@ public class LoginException extends AccountException{
 	@Override
 	public void ShowExceptionReason() {
 		// TODO Auto-generated method stub
-		System.out.println("Àß¸øµÈ/¾ø´Â ¾ÆÀÌµğÀÔ´Ï´Ù");
+		System.out.println("ì˜ëª»ëœ/ì—†ëŠ” ì•„ì´ë””ì…ë‹ˆë‹¤");
 	}
 
 }

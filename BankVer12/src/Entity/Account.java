@@ -76,9 +76,9 @@ public class Account implements Cloneable
 	}
 	
 	public void ShowInfo() {
-		System.out.println("°èÁÂ ID: " + accID);
-		System.out.println("ÀÌ¸§: " + name);
-		System.out.println("ÀÜ¾×: " + balance);
+		System.out.println("ê³„ì¢Œ ID: " + accID);
+		System.out.println("ì´ë¦„: " + name);
+		System.out.println("ì”ì•¡: " + balance);
 	}
 
 	public int getIndex() {

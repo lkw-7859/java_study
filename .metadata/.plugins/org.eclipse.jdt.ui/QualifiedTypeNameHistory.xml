@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="p207.Korean"/>
+    <fullyQualifiedTypeName name="p217.Calculator"/>
+    <fullyQualifiedTypeName name="p238.Calculator"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="p244.Singleton"/>
+    <fullyQualifiedTypeName name="sec12.exam03_import.kumho.BigWidthTire"/>
+    <fullyQualifiedTypeName name="sec12.exam03_import.hankook.Tire"/>
+    <fullyQualifiedTypeName name="sec12.exam03_import.kumho.Tire"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
