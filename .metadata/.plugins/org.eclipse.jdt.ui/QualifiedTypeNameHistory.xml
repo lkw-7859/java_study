@@ -9,6 +9,16 @@
     <fullyQualifiedTypeName name="sec12.exam03_import.kumho.BigWidthTire"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.hankook.Tire"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.kumho.Tire"/>
+    <fullyQualifiedTypeName name="chap07.CellPhone"/>
+    <fullyQualifiedTypeName name="chap07.DmbCellPhone"/>
+    <fullyQualifiedTypeName name="chap07.Student"/>
+    <fullyQualifiedTypeName name="chap07.Calculator"/>
+    <fullyQualifiedTypeName name="chap07.Computer"/>
+    <fullyQualifiedTypeName name="p314.Tire"/>
+    <fullyQualifiedTypeName name="p314.HankookTire"/>
+    <fullyQualifiedTypeName name="p314.KumhoTIre"/>
+    <fullyQualifiedTypeName name="p314.KumhoTire"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
