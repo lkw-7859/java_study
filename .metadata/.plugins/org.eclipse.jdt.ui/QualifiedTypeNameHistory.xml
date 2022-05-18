@@ -20,6 +20,15 @@
     <fullyQualifiedTypeName name="p314.KumhoTire"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="test01.Score"/>
+    <fullyQualifiedTypeName name="chap08.Searchable"/>
+    <fullyQualifiedTypeName name="chap08.RemoteControl"/>
+    <fullyQualifiedTypeName name="p367.HankookTire"/>
+    <fullyQualifiedTypeName name="p367.KumhoTire"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="javax.security.sasl.SaslClient"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
