@@ -17,10 +17,12 @@ public class PointClass {
 			int num =sc.nextInt();
 			point[i]=new int[num];
 			totNumber +=num;
+			
 			for(int j=0;j<point[i].length;j++) {
 				System.out.printf("%d반%d번의 점수:",i+1,j+1);
 				point[i][j]=sc.nextInt();
 			}
+			
 		}
 		
 		System.out.println("  반 | 합계  평균");
@@ -29,9 +31,11 @@ public class PointClass {
 		int total=0;
 		for(int i=0;i<point.length;i++) {
 			int sum=0;
+			
 			for(int j=0; j<point[i].length;j++) {
 				sum+=point[i][j];
 			}
+			
 			total+=sum;
 			System.out.printf(" %2d반 |%7d%7.1f\n",i+1,sum,
 					(double)sum / point[i].length);
