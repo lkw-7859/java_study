@@ -4,6 +4,7 @@
     <fullyQualifiedTypeName name="p207.Korean"/>
     <fullyQualifiedTypeName name="p217.Calculator"/>
     <fullyQualifiedTypeName name="p238.Calculator"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="p244.Singleton"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.kumho.BigWidthTire"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.hankook.Tire"/>
@@ -46,13 +47,6 @@
     <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
     <fullyQualifiedTypeName name="work10.RandomTester"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="w13_1.Human"/>
-    <fullyQualifiedTypeName name="w13_2.Human"/>
-    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthColorChooserUI"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="w13_5.Coordinate"/>
-    <fullyQualifiedTypeName name="w13_4.Coordinate"/>
 </qualifiedTypeNameHistroy>
