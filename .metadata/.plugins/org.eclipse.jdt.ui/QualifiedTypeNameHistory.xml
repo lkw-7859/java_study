@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="sec12.exam03_import.kumho.BigWidthTire"/>
-    <fullyQualifiedTypeName name="sec12.exam03_import.hankook.Tire"/>
-    <fullyQualifiedTypeName name="sec12.exam03_import.kumho.Tire"/>
-    <fullyQualifiedTypeName name="chap07.CellPhone"/>
-    <fullyQualifiedTypeName name="chap07.DmbCellPhone"/>
-    <fullyQualifiedTypeName name="chap07.Student"/>
-    <fullyQualifiedTypeName name="chap07.Calculator"/>
-    <fullyQualifiedTypeName name="chap07.Computer"/>
-    <fullyQualifiedTypeName name="p314.Tire"/>
-    <fullyQualifiedTypeName name="p314.HankookTire"/>
     <fullyQualifiedTypeName name="p314.KumhoTIre"/>
     <fullyQualifiedTypeName name="p314.KumhoTire"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
@@ -56,8 +46,18 @@
     <fullyQualifiedTypeName name="p666.Course"/>
     <fullyQualifiedTypeName name="w14_1.Human"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="w14_3.Account1"/>
+    <fullyQualifiedTypeName name="w14_4.Human"/>
+    <fullyQualifiedTypeName name="w14_2.Day"/>
+    <fullyQualifiedTypeName name="p683.MyFunctionalInterface"/>
+    <fullyQualifiedTypeName name="p684.MyFunctionalInterface"/>
+    <fullyQualifiedTypeName name="p685.MyFunctionalInterface"/>
+    <fullyQualifiedTypeName name="p685.UsingThis"/>
+    <fullyQualifiedTypeName name="p685.UsingThis.Inner"/>
+    <fullyQualifiedTypeName name="p687.MyFunctionalInterface"/>
+    <fullyQualifiedTypeName name="p687.UsingLocalVariable"/>
+    <fullyQualifiedTypeName name="w15_3.ExId"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="w14_3.Account1"/>
-    <fullyQualifiedTypeName name="w14_2.Day"/>
+    <fullyQualifiedTypeName name="w15_6.MinMax"/>
 </qualifiedTypeNameHistroy>
