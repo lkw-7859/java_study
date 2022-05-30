@@ -14,11 +14,11 @@ public class Day {
 	};
 	
 	public static boolean isLeap(int y) {
-		return y % 4 == 0 && y % 100 !=0 || y % 400 == 00;
+		return y % 4 == 0 && y % 100 !=0 || y % 400 == 0;
 	}
 	
 	private static int dayOfMonth(int y, int m) {
-		return mdays[isLeap(y)? 1 : 0][m-1];
+		return mdays[isLeap(y) ? 1 : 0][m-1];
 	}
 	
 	private static int adjustedMonth(int m) {
@@ -108,13 +108,14 @@ public class Day {
 	
 	public String toString() {
 		String[] wd = {"일", "월", "화", "수", "목", "금", "토"};
-		return String.format("%04년%02d월%02d일(%s)",year, month, date, wd[dayOfWeek()]);
+		return String.format("%04d년%02d월%02d일(%s)",year, month, date, wd[dayOfWeek()]);
 	}
 	
 	public int dayOfYear() {
 		int days = date;
-		for (int i = 1; i < month; i++)
-		days += dayOfMonth(year, i);
+		for (int i = 1; i < month; i++) {
+			days += dayOfMonth(year, i);
+		}
 		return days;
 	}
 	
