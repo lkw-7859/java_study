@@ -30,7 +30,7 @@ public class Day {
 	}
 	
 	private static int adjustedDay(int y, int m, int d) {
-		if( d < 1)
+		if(d < 1)
 			return 1;
 		int dMax = dayOfMonth(y, m);
 		return d > dMax ? dMax : d;

@@ -5,7 +5,7 @@ public class Account {
 	private String no;
 	private long balance;
 	
-	Account(String n, String num,long z){
+	public Account(String n, String num,long z){
 		name = n;
 		no = num;
 		balance = z;
@@ -23,7 +23,7 @@ public class Account {
 		return balance;
 	}
 	
-	void deposit(long k) {
+	protected void deposit(long k) {
 		balance+=k;
 	}
 	void withdraw(long k) {
